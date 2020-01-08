@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300|Rajdhani&display=swap" rel="stylesheet">
+    
+    <title>ui/ux</title>
+</head>
+<body>
+    <style>
+        
+
+        .time{
+            font-family: timeburner;
+            font-size:25px;
+            color:black;
+            font-weight: bolder;
+            animation-name: load;
+            animation-duration: .6s;
+            animation-fill-mode: both;    
+        }
+        @keyframes load {
+            0%{transform: translate(0px,-60px);}
+            100%{transform: translate(0);}
+        }
+
+        .meet2{
+            font-size:22px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            animation-name: load2;
+            animation-duration: 1s;
+            animation-delay: .8s;
+            animation-timing-function: cubic-bezier();
+            animation-fill-mode: both;
+            
+        }
+        @keyframes load2 {
+            0%{transform: translate(0); opacity: 0;}
+            33.33%{transform: translateY(-20px); opacity: 1;}
+            100%{transform: translateY(-40px);}
+            
+            
+        }
+        .meet1{
+            font-size:22px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            animation-name: load1;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+            
+        }
+        @keyframes load1 {
+            0%{transform: translate(0); opacity: 0;}
+            25%{transform: translateY(-40px); opacity: 1;}
+            100%{transform: translateY(-50px);}
+            
+        }
+        .box{
+            
+            border-radius: 9px;
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            animation-name: box-load;
+            animation-duration: .5s;
+            animation-delay: 1.7s;
+            animation-fill-mode: both;
+        }
+        @keyframes box-load {
+            0%{ opacity:0;}
+            100%{ opacity:1;}
+        }
+        carousel{
+            position: relative;
+            max-height:300px;
+            perspective: 1500px;
+
+        }
+        .carousel .carousel-item{
+            min-height:300px;
+        }
+        .material-icons{
+            font-size:200px;
+        }
+        .name{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: #000;
+        }
+        .foot{
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Rajdhani', sans-serif;
+            color:#000;
+            
+        }
+
+
+    </style>
+
+    <div style="margin-top: 15px; margin-right: 18px; margin-left: 18px; padding:-10px">
+        <div class="time">
+            <a style="text-decoration: none;" href="#"><span class="time">gawds</span></a>
+            <a href="#" class="btn-floating white right"><i class="material-icons black-text right">person</i></a>
+        </div><br><br>
+        <div class="meet2" id="demo"><b>Meet the,<b></div>
+        <div class="meet1" id="demo"><b>gawds<b></div>
+    
+    </div><br>
+
+    <div class="carousel" style="margin-top:-70px; margin-left: 10px; margin-right: 10px;">
+        <div><a href="#" class="carousel-item box" style="background-color: #F7B2BD;">
+            <i class="material-icons black-text center">person</i><br><p class="name">xyz</p>
+        </a></div>
+        <div><a href="#" class="carousel-item box" style="background-color: #C8D3D5;">
+            <i class="material-icons black-text center">person</i><br><p class="name">xyz</p>
+        </a></div>
+        <div><a href="#" class="carousel-item box" style="background-color: #ECE4B7;">
+            <i class="material-icons black-text center">person</i><br><p class="name">xyz</p> 
+        </a></div>
+        <div><a href="#" class="carousel-item box" style="background-color: #F7996E;">
+                <i class="material-icons black-text center">person</i><br><p class="name">xyz</p>
+        </a></div>
+        <div><a href="#" class="carousel-item box" style="background-color: #FFFFFA;">
+            <i class="material-icons black-text center">person</i><br><p class="name">xyz</p>
+        </a></div>
+    </div><br>
+
+    <footer class="page-footer grey">
+        <div class="container grey">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h6>About Us</h6>
+                    <p class="foot">We are the group of web and graphics enthusiasts, passionate for persuing technologies in an ever dynamic realm of creativity with a purview to spread the same.</p>
+                </div>
+                <div class="col s12 l8">
+                    <p class="foot">© All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById("demo")
+    </script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+    
+</body>
+</html>
